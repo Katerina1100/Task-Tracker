@@ -1,0 +1,291 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(https://images.unsplash.com/photo-1637611331620-51149c7ceb94?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; 
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Login */
+.login-container {
+  width: 650px;
+  height: 500px;
+  position: absolute;
+  top: 30%; 
+  right: 30px; 
+  transform: translateY(-50%);
+  background-color: #13180b;
+  padding: 20px;
+  border: #554c52 1px solid;
+  border-radius: 20px;
+  box-shadow: 0 5px 77px rgba(0, 0, 0, 0.1);
+}
+
+.task-tracker-title {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  color: #8d6b9c;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.login-text{
+  color: #8d6b9c;
+  font-size: 30px;
+}
+
+.login-input, .login-input:focus{
+  background-color: #c2a4b9;
+  border-color: #3a2333;
+}
+
+.login-container button{
+  background-color: #8d6b9c;
+  font-size: 30px;
+  font-weight: bold;
+  color: #0e0a0c;
+  display: flex;
+  align-self: flex-end;
+  
+}
+.login-container button:hover{
+  background-color: #8d6b9c;
+  font-size: 35px;
+  color: #0e0a0c;
+  
+}
+/* Dashboard */
+.dashboard-container {
+  width: 100vw; 
+  height: 100vh; 
+  padding: 20px;
+  display: flex;
+  position: relative;
+}
+
+.dashboard-container h1 {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  color: #3a2333;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logout-btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.form-select-dashboard{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 700px;  
+}
+
+.label-name{
+  font-size: larger;
+}
+
+.dashboard-btn, .form-select, .logout-btn{
+  background-color: #979e7a;
+  font-size: 18px;
+  font-weight: bold;
+  color: #3a2333;
+  border: #3a2333 1px solid;
+  
+ }
+
+.dashboard-btn:hover, .form-select:focus, .logout-btn:hover, .dropdown-item:hover{
+  background-color: #3a2333;
+  color: #979e7a;
+  border: #979e7a 1px solid;
+ }
+
+.form-select-dashboard{
+  position: absolute;
+  top: 150px;
+  left: 40px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form-select{
+  display: flex;
+  flex-direction: row;
+}
+
+.tasks-container{
+  position: absolute;
+  margin-bottom: 800px;
+  top: 25%;
+  left: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #3a2333;
+  width: 100%;
+}
+
+.task-list{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: rgb(184, 146, 184);
+  width: 95%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.task-item {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  background-color: #8d6b9c;
+  padding: 20px;
+  border-radius: 20px;
+  width: 100%;
+  color: #0e0a0c;
+}
+
+.form-check-input{
+  transform: scale(1.5);  
+  border-color: #8d6b9c;  
+}
+  
+.form-check-input:checked {
+  background-color: #8d6b9c;  
+  border-color: #8d6b9c;  
+}
+  
+.task-details-link{
+ margin-left: auto ;
+}
+
+.task-item button{
+  border-radius: 50%;
+  padding: 8px;
+}
+
+/* AddTask */
+
+.add-task-container, .details-container, .edit-task-container {
+  width: 800px;
+  height: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #8d6b9c;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.add-new-task-title, .edit-task-title,  .details-container h1{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.add-task-form label, .edit-task-form label {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.add-task-form input,
+.add-task-form select,
+.add-task-form textarea,
+.edit-task-form input,
+.edit-task-form select,
+.edit-task-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #492e47;
+  border-radius: 5px;
+  
+}
+
+.add-task-form button, .edit-task-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(184, 146, 184);
+  color: #492e47;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.add-task-form button:hover, .edit-task-form button:hover, .add-task-form button:active, .edit-task-form button:active {
+  background-color: #492e47;
+}
+
+.add-task-form .error {
+  color: rgb(20, 11, 11);
+  font-size: 14px;
+}
+
+/* Details */
+
+.task-details {
+  font-size: 1.2rem;
+  margin: 30px 0;
+  color: #3a2333;
+  background-color: #979e7a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.details-container strong {
+  font-weight: bold;
+}
+
+.details-container button { 
+  background-color: #979e7a;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  border-color: 1px solid #492e47;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 10px 0;
+  margin-left: auto;
+  transition: background-color 0.3s ease;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.details-container button:hover {
+  background-color: #3a2333;
+}
+
+.details-container .back-button {
+  background-color: #8d6b9c;
+  margin-top: 20px;
+}
+
+.details-container .button-container {
+  display: flex;
+  gap: 20px;
+}
